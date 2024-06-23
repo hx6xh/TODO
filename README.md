@@ -1,5 +1,5 @@
 # TODO (Android)
-## A TODO App 
+## A TODO App (Kotlin)
 一个简单的todo app（任务清单app），基本实现了常用功能（包括统计页面，日历视图未完成）<br>
 项目效果截图 ：[App页面截图](AppShot)<br>
 使用的统计页面第三方库为[MPAAndroidChart](https://github.com/PhilJay/MPAndroidChart.git)
