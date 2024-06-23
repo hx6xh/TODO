@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CensusFragment">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pieChart"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textsDate"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:text="2024-05-01"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/sDate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/calendar"
+            android:scaleType="fitXY"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="至"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/texteDate"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="2024-06-01"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/eDate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/calendar"
+            android:scaleType="fitXY"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnQuery"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="160dp"
+        android:text="查詢"/>
+
+
+
+
+</FrameLayout>

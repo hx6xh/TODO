@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TODO</string>
+    <string name="Null"> </string>
+    <string name="todo">TODO</string>
+    <string name="userName">用户名</string>
+    <string name="defaultName">admin</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="rememberPassword">记住密码</string>
+    <string name="findPassword">找回密码？ </string>
+    <string name="add">Add</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="over">结束</string>
+    <string name="setting">设置</string>
+    <string name="uiStyle">夜间模式</string>
+    <string name="logout">退出登录</string>
+    <string name="deleteData">删除数据</string>
+    <string name="about">关于</string>
+    <string name="delete">删除</string>
+    <string name="finish">完成</string>
+    <string name="edit">编辑</string>
+    <string name="take">拍照</string>
+    <string name="to">至</string>
+    <string name="sort">排序</string>
+</resources>

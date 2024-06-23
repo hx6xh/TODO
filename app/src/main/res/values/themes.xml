@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TODO" parent="Theme.AppCompat.DayNight">
+        <item name="windowActionBar">false</item>
+        <!-- 启用toolbar作为action bar -->
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:listDivider">@drawable/divider1</item>
+    </style>
+
+    <style name="Theme.TODO" parent="Base.Theme.TODO" />
+    <style name="Theme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

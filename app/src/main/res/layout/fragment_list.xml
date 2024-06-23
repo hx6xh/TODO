@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white2"
+        app:popupTheme="@style/Theme.PopupOverlay">
+
+        <ImageButton
+            android:id="@+id/sort"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:src="@drawable/sort"
+            android:background="@color/white2"
+            android:contentDescription="@string/sort"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:src="@drawable/menu"
+            android:background="@color/white2"
+            android:contentDescription="@string/setting"
+            android:layout_marginEnd="10dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="51dp"
+        android:background="@color/midGray"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="53dp"
+        tools:listitem="@layout/todo_item"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="30dp"
+        android:clickable="true"
+        android:backgroundTint="@color/lightYellow"
+        app:srcCompat="@drawable/add"
+        android:contentDescription="@string/add" />
+
+</FrameLayout>
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinner"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        tools:layout_editor_absoluteX="1dp"-->
+    <!--        tools:layout_editor_absoluteY="66dp" />-->
+
+
+    <!--    <com.google.android.material.appbar.MaterialToolbar-->
+    <!--        android:id="@+id/materialToolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="?attr/colorPrimary"-->
+    <!--        android:minHeight="?attr/actionBarSize"-->
+    <!--        android:theme="?attr/actionBarTheme" />-->
+

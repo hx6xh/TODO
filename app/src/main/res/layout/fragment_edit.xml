@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- add_log.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/addFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="标题:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/et_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入标题"
+            android:background="@drawable/border_rectangle"
+            android:minHeight="48dp"
+            android:autofillHints="null"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="类别:"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/sp_edit_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_rectangle"
+            android:minHeight="48dp"
+            android:autofillHints="日常"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="开始:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/et_edit_startDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择开始日期"
+            android:gravity="center_vertical"
+            android:background="@drawable/border_rectangle"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="截止:"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/et_edit_overDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选择截止日期"
+            android:background="@drawable/border_rectangle"
+            android:gravity="center_vertical"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="描述:"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/et_edit_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="输入描述"
+            android:maxLines="5"
+            android:minHeight="48dp"
+            android:background="@drawable/border_rectangle"
+            android:autofillHints="null"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="优先级:"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/sp_edit_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_rectangle"
+            android:minHeight="48dp"
+            android:autofillHints="null"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="选择打卡方式"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+
+    <RadioGroup
+        android:id="@+id/edit_daka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/edit_notNeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="无"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/edit_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="48dp"
+            android:text="拍照打卡"
+            android:textStyle="italic" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@color/softYellow"
+        android:text="保存更改"/>
+
+</LinearLayout>

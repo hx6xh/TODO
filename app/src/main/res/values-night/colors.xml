@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF303030</color>
+    <color name="gray">#808080</color>
+    <color name="softGray">#CCCCCC</color>
+    <color name="softYellow">#C66C11</color>
+    <color name="lightYellow">#3F51B5</color>
+    <color name="green">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#006400</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="white2">#303030</color>
+    <color name="midGray">#494949</color>
+    <color name="darkGray">#FFAAAAAA</color>
+    <!-- 逾期颜色 -->
+    <color name="overdue_color">#FF0000</color> <!-- 红色 -->
+    <!-- 临近截止颜色 -->
+    <color name="near_deadline_color">#FEDC5E</color> <!-- 黄色 FFFF00-->
+    <!-- 未开始颜色 -->
+    <color name="not_started_color">#999999</color> <!-- 灰色 -->
+</resources>

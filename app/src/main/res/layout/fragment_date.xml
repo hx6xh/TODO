@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DateFragment">
+
+    <com.haibin.calendarview.CalendarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:default_status="shrink"
+        app:calendar_show_mode="only_week_view">
+<!--        app:calendar_content_view_id="@+id/calendarRecyclerView">-->
+
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            app:calendar_height="50dp"
+            app:current_month_lunar_text_color="#CFCFCF"
+            app:current_month_text_color="#333333"
+            app:month_view="com.example.todo.calendarview.MonthView"
+            app:month_view_show_mode="mode_only_current"
+            app:other_month_text_color="#e1e1e1"
+            app:scheme_text="假"
+            app:scheme_text_color="#333"
+            app:scheme_theme_color="#333"
+            app:selected_text_color="#fff"
+            app:selected_theme_color="#333"
+            app:week_background="#fff"
+            app:week_start_with="mon"
+            app:week_text_color="#111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" />
+
+        <!--        <android.support.v7.widget.RecyclerView-->
+<!--            android:id="@+id/recyclerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#ffffff" />-->
+    </com.haibin.calendarview.CalendarLayout>
+
+</FrameLayout>

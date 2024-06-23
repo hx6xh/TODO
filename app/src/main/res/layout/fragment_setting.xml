@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/softGray">
+
+        <!-- 夜间模式 -->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_night"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            app:thumbTint="@color/orange"
+            app:trackTint="@color/softGray"
+            android:padding="20dp"
+            android:text="@string/uiStyle"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <!-- 删除数据 -->
+        <TextView
+            android:id="@+id/deleteAllData"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="@string/deleteData"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <!-- 关于 -->
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:text="@string/about"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:padding="20dp"/>
+
+        <!-- 退出登录 -->
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:text="@string/logout"
+            android:textSize="20sp"
+            android:textColor="@color/gray" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/softGray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+</FrameLayout>

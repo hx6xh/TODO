@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageButton
+        android:id="@+id/btn_finish"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:backgroundTint="@color/green"
+        app:tint="@color/black"
+        android:src="@drawable/finished"
+        app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/finish" />
+
+    <ImageButton
+        android:id="@+id/btn_edit"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:backgroundTint="@color/darkGray"
+        app:tint="@color/white"
+        android:src="@drawable/edit"
+        app:layout_constraintEnd_toStartOf="@+id/btn_remove"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/edit" />
+
+    <ImageButton
+        android:id="@+id/btn_remove"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:backgroundTint="@color/red"
+        app:tint="@color/white"
+        android:src="@drawable/delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/delete" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        android:id="@+id/container">
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="2024-01-01"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textDate"
+            android:padding="10dp"
+            android:text="@string/over"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@+id/textDate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textThing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDate"
+            android:textSize="16sp"
+            android:text="Thing"
+            app:layout_constraintTop_toBottomOf="@+id/textDate"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

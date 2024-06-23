@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/border_rectangle.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white"/> <!-- 背景颜色 -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/lightYellow"/> <!-- 边框颜色 -->
+    <padding
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp"
+        android:left="10dp"/> <!-- 内边距，可选 -->
+    <corners android:radius="8dp"/> <!-- 圆角半径，可选 -->
+</shape>
